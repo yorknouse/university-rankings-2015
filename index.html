@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+  <meta charset="utf-8" />
+  <title>University rankings 2015&ndash;16</title>
+  <meta name="viewport" content="width=500" />
+  <style>
+  body {
+    background: #eee;
+    font-family: Georgia, "Bitstream Charter", serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  svg {
+    background: white;
+  }
+  text {
+    fill: #777;
+  }
+  circle {
+    fill: #999;
+  }
+  line {
+    stroke: #999;
+  }
+  .mouseover text,
+  .York text,
+  .mouseover circle,
+  .York circle {
+    fill: #000;
+  }
+  .mouseover line,
+  .York line {
+    stroke: #000;
+  }
+  .title {
+    fill: #333;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <h1>The Guardian university rankings 2015&ndash;16</h1>
+
+  <p>Data: <a href="http://www.theguardian.com/education/ng-interactive/2015/may/25/university-league-tables-2016">The Guardian</a></p>
+
+  <div id="slopegraph"></div>
+
+  <script src="d3.v3.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
