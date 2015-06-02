@@ -8,7 +8,7 @@
   body {
     background: #eee;
     font-family: Georgia, "Bitstream Charter", serif;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     text-align: center;
   }
@@ -25,17 +25,25 @@
   circle {
     fill: #999;
   }
-  line {
+  line.visible {
     stroke: #999;
   }
-  .mouseover text,
-  .York text,
-  .mouseover circle,
-  .York circle {
+  line.transparent {
+    stroke: transparent;
+    stroke-linecap: round;
+    stroke-width: 20px;
+  }
+  g:focus {
+    outline: 0;
+  }
+  g:hover text,
+  g:focus text,
+  g:hover circle,
+  g:focus circle {
     fill: #000;
   }
-  .mouseover line,
-  .York line {
+  g:hover line.visible,
+  g:focus line.visible {
     stroke: #000;
   }
   .title {
